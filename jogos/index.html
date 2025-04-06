@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario -1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<div id="visualNovel">
+    <div class="inside">
+        <div class="skin">
+            <h1>Falsidade ideológica</h1>
+            <button id="identidade" onclick="Ideologica()">Buy</button>
+            <h2>C$ 500</h2>
+        </div>
+    </div>
+    <button class="button" onclick="NovelClose()">Fechar</button>
+</div>
+<div id="buy">
+    <button onclick="Caminhada()">Skins de Caminhadas</button>
+    <button onclick="Morte()">Skins de Morte</button>
+    <button onclick="Carro()">Skins de Carros</button>
+    <button onclick="Explosion()">Skins de Explosões</button>
+    <button onclick="Novel()">Novel</button>
+    <button onclick="Close()">Fechar</button>
+</div>
+<div id="smoke">
+    <div class="inside">
+        <div class="skin">
+            <img src="img/explosion1.png">
+            <button onclick="None()">Usar</button>
+            <h2>Gratis</h2>
+        </div>
+        <div class="skin">
+            <img src="img/explosion2.png">
+            <button id="pink" onclick="Pink()">Comprar</button>
+            <h2>C$ 350</h2>
+        </div>
+        <div class="skin">
+            <img src="img/explosion3.png">
+            <button id="crash" onclick="Crash()">Comprar</button>
+            <h2>C$ 500</h2>
+        </div>
+    </div>
+    <button class="button" onclick="CloseExplosion()">Fechar</button>
+</div>
+<div id="carro">
+    <div class="inside">
+        <div class="skin">
+            <img src="img/carro1.png">
+            <button onclick="Normal()">Usar</button>
+            <h2>Gratis</h2>
+        </div>
+        <div class="skin">
+            <img src="img/carro2.png">
+            <button id="car" onclick="Carrinho()">Comprar</button>
+            <h2>C$ 350</h2>
+        </div>
+        <div class="skin">
+            <img src="img/carro3.png">
+            <button id="carzao" onclick="Carrao()">Comprar</button>
+            <h2>C$ 500</h2>
+        </div>
+    </div>
+    <button class="button" onclick="CarroClose()">Fechar</button>
+</div>
+<div id="morte">
+    <div class="inside">
+        <div class="skin">
+            <img src="img/game-over.png">
+            <button onclick="Die()">Usar</button>
+            <h2>Gratis</h2>
+        </div>
+        <div class="skin">
+            <img src="img/morreu.png">
+            <button id="eye" onclick="Olho()">Comprar</button>
+            <h2>C$ 350</h2>
+        </div>
+        <div class="skin">
+            <img src="img/caveira.png">
+            <button id="skull" onclick="Caveira()">Comprar</button>
+            <h2>C$ 500</h2>
+        </div>
+    </div>
+    <button class="button" onclick="MorteClose()">Fechar</button>
+</div>
+<div id="caminhada">
+    <div class="inside">
+        <div class="skin">
+            <img src="img/mario.gif">
+            <button onclick="Default()">Usar</button>
+            <h2>Gratis</h2>
+        </div>
+        <div class="skin">
+            <img src="img/idk.gif">
+            <button id="idk" onclick="Idk()">Comprar</button>
+            <h2>C$ 350</h2>
+        </div>
+        <div class="skin">
+            <img src="img/menina.gif">
+            <button id="girl" onclick="Menina()">Comprar</button>
+            <h2>C$ 500</h2>
+        </div>
+    </div>
+    <button class="button" onclick="CaminhadaClose()">Fechar</button>
+</div>
+<body>
+    <div class="game-board index">
+        <img src="img/clouds.png" class="clouds">
+        <img src="img/mario.gif" class="mario">
+        <p id="dinhero">Coin: 0</p>
+        <p id="BestScore"></p>
+        <h1>Super Mario -1</h1>
+        <a href="/jogos/carro">Cars</a>
+        <a href="/jogos/mario">Mario Jump</a>
+        <a href="/jogos/novel">Last Love</a>
+        <button onclick="Buy()">Loja</button>
+    </div>
+    <p class="version">v3.0</p>
+    <script src="script.js"></script>
+</body>
+</html>

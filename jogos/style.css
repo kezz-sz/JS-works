@@ -1,0 +1,275 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    user-select: none;
+}
+body{
+    background-color: #5a2400;
+}
+button{
+    cursor: pointer;
+}
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 30px solid rgb(3, 163, 3);
+    margin: 0 auto;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+    position: relative;
+    overflow: hidden;
+}
+#dinhero{
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+}
+#BestScore{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #Fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.index{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.index h1{
+    background: linear-gradient(to right, #ff0000, #ff9900, #33cc33, #3399ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline;
+    z-index: 998;
+    font-size: 80px;
+    margin-top: 5%;
+}
+.index a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff5;
+    transition: .2s;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-top: 1%;
+    z-index: 998;
+    padding: 0 30px 0 30px;
+
+    &:hover{
+        background-color: #fff;
+        letter-spacing: 2px;
+    }
+}
+.index button{
+    margin-top: 1%;
+    width: 15%;
+    height: 45px;
+    font-size: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff5;
+    transition: .2s;
+
+    &:hover{
+        background-color: #fff;
+        scale: 1.1;
+    }
+}
+#buy{
+    position: fixed;
+    z-index: 999;
+    width: 90%;
+    height: 400px;
+    background-color: #0003;
+    margin-left: 5%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    top: -100%;
+    transition: .5s;
+}
+#buy Button{
+    width: 35%;
+    height: 60px;
+    font-size: 30px;
+    background-color: #fd0;
+    border-radius: 30px;
+    border: none;
+    margin-top: 1%;
+    transition: .2s;
+
+    &:hover{
+        background-color: #fa0;
+    }
+}
+#caminhada{
+    position: fixed;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    z-index: 999;
+    background-color: #0003;
+    border-radius: 10px;
+    top: -100%;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#visualNovel{
+    position: fixed;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    z-index: 999;
+    background-color: #0003;
+    border-radius: 10px;
+    top: -100%;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#smoke{
+    position: fixed;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    z-index: 1000;
+    background-color: #0003;
+    border-radius: 10px;
+    top: -100%;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#carro{
+    position: fixed;
+    z-index: 999;
+    width: 90%;
+    background-color: #0003;
+    height: 400px;
+    margin-left: 5%;
+    border-radius: 10px;
+    top: -100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+}
+.inside{
+    width: 100%;
+    display: flex;
+    margin-top: 1%;
+}
+.button{
+    width: 30%;
+    margin-top: 1%;
+    height: 30px;
+    background-color: #fd0;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: .2s;
+
+    &:hover{
+        background-color: #fa0;
+    }
+}
+.skin{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0;
+    margin-left: 2.5%;
+    border: 2px solid #000;
+    background-color: #0003;
+}
+.skin img{
+    width: 80%;
+    height: 250px;
+}
+.skin button{
+    width: 80%;
+    background-color: #1f1;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transition: .2s;
+    border: 2px solid #000;
+
+    &:hover{
+        background-color: #009900;
+    }
+}
+.skin h2{
+    color: #fd0;
+}
+#morte{
+    position: fixed;
+    z-index: 999;
+    width: 90%;
+    background-color: #0003;
+    margin-left: 5%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    top: -100%;
+    transition: .5s;
+}
+.version{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #fff5;
+    font-size: 15px;
+    z-index: 999;
+}
+.clouds{
+    position: absolute;
+    width: 550px;
+    animation: Clouds-Animation 20s infinite linear;
+}
+.mario{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    animation: Mario-Animation 10s linear infinite;
+}
+@keyframes Mario-Animation {
+    from {
+        left: -100px;
+    }
+    to {
+        left: 100%;
+    }
+}
+@keyframes Clouds-Animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}

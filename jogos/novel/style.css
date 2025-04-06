@@ -1,0 +1,313 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    user-select: none;
+}
+body{
+    margin: 0;
+    background-color: #1f1f1f;
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+.menu img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+.options{
+    transition: .5s;
+    z-index: 1;
+    position: absolute;
+    right: 100px;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background: #0008;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.options h1{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    /* background: linear-gradient(to right, #ff0000, #ff9900, #33cc33, #3399ff); */
+    background: linear-gradient(to right, #ff5555, #ffcccc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.options button{
+    cursor: pointer;
+    width: 200px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    height: 40px;
+    background-color: #0003;
+    transition: .2s;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+.options button:hover{
+    scale: 1.1;
+    letter-spacing: 1px;
+}
+.load, .new, .config{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: #0005;
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+.button{
+    height: 50px;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0000;
+    border: none;
+    cursor: pointer;
+}
+.button img{
+    filter: invert(1);
+    transition: .2s;
+    border-radius: 50%;
+}
+.button img:hover{
+    scale: 1.1;
+}
+.carregar{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carregar button{
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: #0003;
+    margin-left: 20px;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.carregar button img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+.carregar button:hover{
+    scale: 1.1;
+}
+.game{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.game #background{
+    width: 100%;
+    height: 100%;
+}
+.game #character{
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+}
+.chat{
+    width: 80%;
+    height: 150px;
+    position: absolute;
+    background-color: #0008;
+    border-radius: 10px;
+    border: 2px solid #000;
+    bottom: 10px;
+}
+.chat p{
+    margin-left: 10px;
+    margin-right: 80px;
+    letter-spacing: .2px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+.chat h2{
+    position: absolute;
+    right: 10px;
+    margin-top: 0;
+    background: #fff3;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    text-align: center;
+    letter-spacing: .2px;
+    text-decoration: underline;
+}
+.play{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 1px;
+}
+.play button{
+    width: 100px;
+    height: 20px;
+    background-color: #fff3;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff7;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+.play button:hover{
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.save{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #0008;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 25%;
+    transition: .2s;
+    top: -100%;
+}
+.save button{
+    width: 40%;
+    height: 30px;
+    margin-top: 1%;
+    border-radius: 5px;
+    background: #fff5;
+    color: #000;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.save button:hover{
+    scale: 1.1;
+}
+.save h1{
+    margin-bottom: .25%;
+    margin-top: 1%;
+}
+.configs{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border-left: 2px solid #000;
+    background: #0005;
+}
+.configs button{
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #0003;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .2s;
+    cursor: pointer;
+}
+.configs button img{
+    filter: invert(1);
+}
+.configs button:hover{
+    scale: 1.1;
+}
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.caixa p{
+    margin-left: 5px;
+    color: #fff;
+}
+.caixa input{
+    margin-left: 10px;
+    height: 45px;
+    width: 250px;
+    margin-top: 7px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    background: #0005;
+}
+.choice{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #0005;
+    border-radius: 10px;
+    border: 2px solid #000;
+    top: -100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    flex-direction: column;
+    transition: .2s;
+}
+.choice button{
+    width: 50%;
+    height: 30px;
+    margin-top: 1%;
+    border: 2px solid #000;
+    background: #0005;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition: .2s;
+    cursor: pointer;
+}
+.choice button:hover{
+    scale: 1.1;
+}

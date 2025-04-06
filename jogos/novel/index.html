@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Novel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="choice">
+        <button id="aka" onclick="ButtonAkari()">Eu dou o cuzinho</button>
+        <button id="me" onclick="ButtonMei()">Toma meu Toba</button>
+        <button id="izu" onclick="ButtonIzumi()">Sou prostituta</button>
+        <button id="ken" onclick="ButtonKenji()">Sou homem, mas do o toba tmb</button>
+        <button id="ry" onclick="ButtonRyo()">Sou um puta de um viado</button>
+        <button id="nada" onclick="Nothing()">Puta Merda Viado</button>
+    </div>
+    <div class="save">
+        <h1>Deseja salvar em qual slot?</h1>
+        <button onclick="Save1()">Slot1</button>
+        <button onclick="Save2()">Slot2</button>
+        <button onclick="Save3()">Slot3</button>
+        <button onclick="Save4()">Slot4</button>
+        <button onclick="Save5()">Slot5</button>
+        <button onclick="Save6()">Slot6</button>
+        <button onclick="Saveclose()">Fechar</button>
+    </div>
+    <div class="game">
+        <img src="../img/classDay.jpg" id="background">
+        <img src="" id="character">
+        <div class="chat">
+            <h2 id="name">???</h2>
+            <p id="chat">esquibirirdobedobe yes yes</p>
+            <div class="play">
+                <button id="automatico" onclick="Auto()">Auto</button>
+                <button id="pular" onclick="Skip()">Skip</button>
+                <button onclick="Salvar()">Save</button>
+                <button onclick="Back()">Menu</button>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <img class="menuimg" src="../img/menu.png">
+        <div class="config">
+            <button class="button" onclick="CloseConfig()"><img src="../img/X.png"></button>
+            <div class="configs">
+                <div class="caixa">
+                    <button id="musicButton" onclick="PlayMusic()"><img id="musicImg" src="../img/play.png"></button>
+                    <p id="musicP">Play Music</p>
+                </div>
+                <div class="caixa">
+                    <button onclick="AlterName()"><img src="../img/lapis.png"></button>
+                    <input type="text" id="Nombre">
+                    <p id="verificacao"></p>
+                </div>
+            </div>
+        </div>
+        <div class="load">
+            <button class="button" onclick="CloseLoad()"><img src="../img/X.png"></button>
+            <div class="carregar">
+                <button onclick="Slot1()"><img id="s1" src=""></button>
+                <button onclick="Slot2()"><img id="s2" src=""></button>
+                <button onclick="Slot3()"><img id="s3" src=""></button>
+            </div>
+            <div class="carregar">
+                <button onclick="Slot4()"><img id="s4" src=""></button>
+                <button onclick="Slot5()"><img id="s5" src=""></button>
+                <button onclick="Slot6()"><img id="s6" src=""></button>
+            </div>
+        </div>
+        <div class="options">
+            <h1>Last Love</h1>
+            <button onclick="NewGame()">Novo Jogo</button>
+            <button onclick="LoadGame()">Carregar Jogo</button>
+            <button onclick="Configuracao()">Configurações</button>
+            <button onclick="Sair()">Sair</button>
+        </div>
+    </div>
+    <audio loop id="music">
+        <source src="../sounds/NovelLofi.mp3" type="audio/mp3">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario -1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+</head>
+<div id="lose">
+    <h2>Você Perdeu!</h2>
+    <p id="loseScore"></p>
+    <button onclick="Restart()">Recomeçar</button>
+    <a href="/jogos">menu</a>
+</div>
+<body>
+    <div id="sky" class="game-board">
+        <p id="coins">Coins: 0</p>
+        <p id="best"></p>
+        <p id="score">Score: 0</p>
+        <img src="../img/clouds.png" class="clouds">
+        <img src="../img/mario.gif" class="mario">
+        <img src="../img/coin.gif" class="coin">
+        <img src="../img/pipe.png" class="pipe">
+    </div>
+    <p class="version">v3.0</p>
+    <script src="script.js"></script>
+</body>
+</html>
