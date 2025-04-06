@@ -1,0 +1,32 @@
+body {
+    background-color: darkslategray;
+    margin: 0 auto;
+}
+.d1 {
+    margin-top: 16%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: rgb(104, 0, 104);
+    font-size: 20px;
+    text-align: left;
+}
+.d2 {
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: rgb(104, 0, 104);
+    font-size: 20px;
+    text-align: left;
+}

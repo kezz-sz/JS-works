@@ -1,0 +1,34 @@
+body {
+    background-color: darkslategray;
+    margin: 0 auto;
+}
+.d1 {
+    margin-top: 16%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    color: rgb(104, 0, 104);
+    font-size: 20px;
+    text-align: left;
+}
+.d1 p {
+    text-align: center;
+    font-size: 30px;
+}
+form input[type=button]{
+    background: #5F7C8A;
+    color: antiquewhite;
+    border: 1px 1px 1px 1px;
+    border-color: blueviolet;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+form input[type=button]:hover{
+    background-color: rgb(35, 148, 148);
+    transition: 0.5s;
+}
