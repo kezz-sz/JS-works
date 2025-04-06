@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Romido-perfil.png" type="image/x-icon">
+    <title>RomildoBot</title>
+</head>
+<body id="B">
+    <div class="menu">
+        <a href="http://localhost/st/"><div id="menua1" class="menua">RomildoBot</div></a>
+        <a href="http://localhost/st/arb.html"><div class="menua">Sobre</div></a>
+        <a href="http://localhost/st/a.html"><div class="menua">Avaliação</div></a>
+        <a href="http://localhost/st/adivinhacao/"><div class="menua">Adivinhação</div></a>
+        <a href="http://localhost/st/xadrez/"><div class="menua">Xadrez</div></a>
+    </div>
+    <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <div class="f">
+            <input type="file" id="image-input" accept="image">
+            <p class="p1">Adicione sua Foto aqui:</p>  
+        </div>
+           <div class="s">
+            <p>Este ChatBot se chama Romildo. Ele não gosta de palavrões e ele quer que você escolha uma foto para poderem se comunicar melhor. Ele também não entende muito bem o português, e também precisa que você seja direto com ele, agradecemos a compreenção!</p>
+        </div>
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+    <div id="chat-container">
+        <h2 id="Text" onclick="Click()">RomildoBot</h2>
+        <div id="background">
+        <img id="Image" onclick="Click2()" src="Romido-perfil.png" alt="" class="romildobot">
+        </div>
+        <div id="chat-display"></div>
+        <div class="e">
+        <input class="input" type="text" id="user-input" placeholder="Digite sua mensagem...">
+        <button class="buttonm" id="sendButton"></button>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Romido-perfil.png" type="image/x-icon">
+</head>
+<body>
+    <div class="menu">
+        <a href="http://localhost/st/"><div id="menua1" class="menua">RomildoBot</div></a>
+        <a href="http://localhost/st/arb.html"><div class="menua">Sobre</div></a>
+        <a href="http://localhost/st/a.html"><div class="menua">Avaliação</div></a>
+        <a href="http://localhost/st/adivinhacao/"><div class="menua">Adivinhação</div></a>
+        <a href="http://localhost/st/xadrez/"><div class="menua">Xadrez</div></a>
+    </div>
+    <div class="arb1">
+    <h1>Avalie nosso projeto:</h1>
+    <form autocomplete="off" id="review-form">
+        <label for="name">Nome:</label><br>
+        <br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="rating">Classificação:</label><br>
+        <br>
+        <select id="rating" name="rating" required>
+            <option value="5">&#9733 &#9733 &#9733 &#9733 &#9733</option>
+            <option value="4">&#9733 &#9733 &#9733 &#9733</option>
+            <option value="3">&#9733 &#9733 &#9733</option>
+            <option value="2">&#9733 &#9733</option>
+            <option value="1">&#9733</option>
+        </select><br><br>
+        
+        <label for="comment">Comentário:</label><br>
+        <br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+        <button onclick="QrCode()" id="submit" type="submit">Enviar Avaliação</button>
+    </form>
+    </div>
+    <div id="QrCodeBackground">
+    </div>
+    <div id="QrCode">
+        <img src="QrCode.jpg" id="QrCodeImg" alt="QrCode do Instagram do nosso grupo">
+        <h2>Também siga nosso Instagram!</h2>
+        <button onclick="QrCodeDisappear()" id="QrCodeButton">Fechar</button>
+    </div>
+    <script src="a.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
