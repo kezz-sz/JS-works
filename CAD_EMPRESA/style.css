@@ -1,0 +1,14 @@
+body{
+    margin: auto;
+    background-color: bisque;
+}
+
+.espaço{
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+}
