@@ -1,0 +1,1091 @@
+body{
+    margin: 0 auto;
+    background-color: #0e0e0e;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #090909;
+    border: 1px solid #f00;
+    border-radius: 10px;
+}
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #000;
+    margin-bottom: 1%;
+}
+footer{
+    width: 100%;
+    height: 130px;
+    background-color: #000;
+    margin-top: 1%;
+    clear: both;
+}
+.corpo{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #000;
+    height: 600px;
+}   
+.menu{
+    width: 100%;
+    padding-top: 19%;
+    border-bottom: 1px solid #1f1f1f;
+    background-image: linear-gradient(to bottom, #000, #1f1f1f);
+}
+.menu a{
+    text-decoration: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: calc(7% - .5px);
+    color: #fff;
+    transition: .2s;
+    border-radius: 2px;
+    border-bottom: 1px solid #f000;
+}
+.menu a:hover{
+    border-bottom: 1.3px solid #f00;
+}
+header img{
+    width: 10%;
+    transition: .5s;
+}
+header img:hover{
+    scale: 1.1;
+}
+footer img{
+    width: 10%;
+    transition: .5s;
+}
+footer img:hover{
+    scale: .9;
+}
+#open img, #close img{
+    width: 30px;
+    height: 30px;
+}
+#open, #close{
+    border: none;
+    background-color: #0000;
+    position: fixed;
+    margin-top: 10px;
+    right: 10px;
+    margin-left: 10px;
+    z-index: 999;
+    transition: .5s;
+}
+#open:hover, #close:hover{
+    scale: 1.1;
+}
+#open, #close{
+    filter: invert(.9);
+}
+#close{
+    display: none;
+}
+#burguer{
+    width: 25%;
+    background-color: #1f1f1f;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    transition: .5s;
+    z-index: 999;
+}
+.none{
+    display: none;
+}
+.animes{
+    margin-top: 15%;
+}
+.animes h2{
+    color: #fff;
+    margin-left: 18%;
+}
+.animes input{
+    width: 90%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    transition: .2s;
+    margin-bottom: 1%;
+}
+.animes input:hover{
+    border: 1px solid #f00;
+    background-color: #1f1f1f;
+    color: #f00;
+}
+.animes li{
+    list-style: none;
+    width: 92.5%;
+    background-color: #0003;
+    margin-top: 1%;
+    border-radius: 5px;
+    height: 20px;
+    text-align: center;
+}
+.animes a{
+    text-decoration: none;
+    transition: .2s;
+    color: #fff;
+    font-weight: bold;
+}
+.animes a:hover{
+    color: #f00;
+}
+.lancamento{
+    width: 23%;
+    margin-left: 1.4%;
+    height: 550px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    float: left;
+    margin-top: 1.5%;
+    transition: .5s;
+    text-align: center;
+    color: #fff;
+}
+.lancamento:hover{
+    border: 2px solid #f00;
+    scale: 1.05;
+    color: #f00;
+}
+.lancamento img{
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    height: 400px;
+}
+.corpo1{
+    width: 80%;
+    background-color: #000;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: #fff;
+}
+.plano img{
+    width: 100%;
+    margin-top: 120%;
+    height: 80px;
+    transition: .5s;
+}
+.plano img:hover{
+    scale: 1.01;
+}
+.social{
+    position: relative;
+    float: right;
+    top: 12px;
+    list-style-type: none;
+    right: 5px;
+}
+.social li{
+    float: left;
+    margin-left: 25px;
+}
+.social a{
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+    transition: .2s;
+}
+.social a:hover{
+    scale: 1.1;
+}
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+.social a[href*="instagram.com"] {
+    background-image: url(../img/instagram.png);
+}
+.foto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #a8a8a8;
+    margin-left: 1%;
+}
+#profilePic{
+    filter: invert(.8);
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    margin-left: 10px;
+    border: 2px solid #fff;
+    margin-top: 1%;
+}
+#profilePicInput{
+    display: none;
+}
+#profileForm button{
+    width: 3.3%;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-left: -160px;
+    margin-top: 125px;
+    position: absolute;
+    transition: .2s;
+    padding-top: 3px;
+}
+#profileForm button:hover{
+    scale: 1.1;
+    border: 2px solid #f00;
+}
+#profileForm button img{
+    width: 100%;
+    filter: invert(1);
+}
+#profileForm label img{
+    padding: 2px 3px 2px 3px;
+    width: 3%;
+    border-radius: 25%;
+    filter: invert(1);
+    margin-left: -30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: .2s;
+}
+#profileForm label img:hover{
+    scale: 1.1;
+    border: 2px solid #0ff;
+}
+#editNameButton{
+    background-color: #0000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 1.5%;
+    transition: .2s;
+}
+#editNameButton img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+#editNameButton:hover{
+    scale: 1.1;
+    border: 2px solid #f00;
+}
+#userName{
+    color: #fff;
+    position: absolute;
+    margin-left: 13%;
+    width: calc(60% - 15px);
+    background-color: #1f1f1f;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+#userPhoneNumber{
+    color: #fff;
+    position: absolute;
+    margin-left: 13%;
+    width: calc(60% - 15px);
+    background-color: #1f1f1f;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-top: 4%;
+}
+#editPhoneNumberButton{
+    background-color: #0000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 4%;
+    transition: .2s;
+}
+#editPhoneNumberButton img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+#editPhoneNumberButton:hover{
+    scale: 1.1;
+    border: 2px solid #f00;
+}
+#userEmail{
+    color: #fff;
+    position: absolute;
+    margin-left: 13%;
+    width: calc(60% - 15px);
+    background-color: #1f1f1f;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-top: 6.5%;
+}
+#editEmailButton{
+    background-color: #0000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 6.5%;
+    transition: .2s;
+}
+#editEmailButton img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+#editEmailButton:hover{
+    scale: 1.1;
+    border: 2px solid #f00;
+}
+.user{
+    margin-left: 2%;
+}
+#userGender{
+    color: #fff;
+    position: absolute;
+    margin-left: 13%;
+    width: calc(60% - 15px);
+    background-color: #1f1f1f;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-top: 9%;
+}
+#editGenderButton{
+    background-color: #0000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 9%;
+    transition: .2s;
+}
+#editGenderButton img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+#editGenderButton:hover{
+    scale: 1.1;
+    border: 2px solid #f00;
+}
+button{
+    cursor: pointer;
+}
+.fav{
+    text-align: center;
+}
+.uniao{
+    height: 370px;
+}
+.favs{
+    width: 20%;
+    height: 360px;
+    border: 2px solid #fff;
+    margin-left: 1%;
+    position: relative;
+    border-radius: 10px;
+    background-color: #000;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    transition: .5s;
+}
+.favs:hover{
+    scale: 1.05;
+    color: #f00;
+    border: 2px solid #f00;
+}
+.favs img{
+    width: 100%;
+    height: 310px;
+    border-radius: 6px 6px 0 0 ;
+}
+.favs h3{
+    margin-top: 10px;
+}
+.passar img{
+    filter: invert(1);
+    width: 10%;
+    transition: .2s;
+    float: right;
+    margin-top: 100px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+.passar img:hover{
+    scale: 1.05;
+}
+#a5, #a6{
+    display: none;
+}
+.title{
+    text-align: center;
+}
+#user-input{
+    width: calc(99.5% + 1px);
+    height: 30px;
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-left: none;
+    border-right: none;
+    transition: .2s;
+}
+#user-input:hover{
+    border: 2px solid #f00;
+    border-right: none;
+    border-left: none;
+    color: #f00;
+    background-color: #1f1f1f;
+}
+#send-button{
+    position: absolute;
+    background-color: #0000;
+    border: none;
+    right: 7%;
+    margin-top: 2px;
+    transition: .2s;
+    width: 10%;
+}
+#send-button:hover{
+    scale: 1.05;
+}
+#send-button img{
+    width: 20%;
+    filter: invert(1);
+}
+#chat-container{
+    margin-left: 1%;
+}
+.uniao2{
+    height: 500px;
+}
+.planos{
+    width: 30%;
+    margin-left: 2.2%;
+    float: left;
+    background-color: #000;
+    border: 2px solid #fff;
+    margin-top: 1%;
+    border-radius: 10px;
+    text-align: center;
+    transition: .2s;
+    color: #fff;
+}
+.planos p{
+    color: #090;
+    font-weight: bold;
+}
+.planos img{
+    width: 99%;
+    margin: 0 auto;
+}
+.planos:hover{
+    scale: 1.05;
+    border: 2px solid #f00;
+    color: #f00;
+}
+.basico{
+    height: 400px;
+}
+.basico img{
+    float: left;
+    margin-top: -9%;
+}
+.basico h1{
+    padding-top: 10%;
+    margin-bottom: 0;
+    text-align: center;
+}
+.basico h2{
+    color: #090;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.basico p{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.basico button{
+    width: 30%;
+    margin-left: 12%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: .2s;
+    margin-top: 1%;
+}
+.basico button:hover{
+    color: #f00;
+    border: 2px solid #f00;
+    background-color: #1f1f1f;
+}/*
+#background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #0003;
+    z-index: 1000;
+    display: none;
+}*/
+#compras{
+    width: 80%;
+    height: 400px;
+    position: fixed;
+    background-color: #000;
+    left: 10%;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-top: 9%;
+    color: #fff;
+    display: none;
+    z-index: 1001;
+}
+#compras h2{
+    text-align: center;
+    margin-bottom: 0;
+}
+.email{
+    color: #f00;
+    transition: .2s;
+}
+.email:hover{
+    color: #800;
+}
+.frequentes{
+    font-weight: bold;
+    margin-left: 1%;
+}
+.finalizar{
+    position: absolute;
+    width: 50%;
+    bottom: 10%;
+    margin-left: 25%;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: .2s;
+}
+.finalizar:hover{
+    color: #f00;
+    border: 2px solid #f00;
+    background-color: #1f1f1f;
+}
+.payment{
+    width: 30%;
+    margin-left: 35%;
+    height: 30px;
+    transition: .2s;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #000;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+.payment:hover{
+    color: #f00;
+    border: 2px solid #f00;
+    background-color: #1f1f1f;
+}
+.method{
+    display: none;
+}
+.method h2{
+    margin-top: 0;
+}
+.method input{
+    width: 30%;
+    margin-left: 35%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    transition: .2s;
+}
+.method input:hover{
+    color: #f00;
+    background-color: #1f1f1f;
+    border: 2px solid #f00;
+}
+.method img{
+    width: 13%;
+    border-radius: 10px;
+    margin-left: 43.5%;
+    margin-top: 0.3%;
+}
+.pirata{
+    height: 540px;
+}
+.pirata img{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.sobre{
+    margin-left: 1%;
+}
+.matriz{
+    float: right;
+    width: 30%;
+    height: 200px;
+    background-color: #1f1f1f;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 2px solid #fff; 
+    position: absolute;
+    right: 11%;
+}
+.matriz img{
+    margin-left: 25%;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+.uniao3{
+    height: 400px;
+}
+.uniao4{
+    height: 350px;
+}
+.uniao4 img{
+    width: 20%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: .2s;
+    position: relative;
+    float: left;
+}
+.uniao4 img:hover{
+    scale: 1.05;
+    border: 2px solid #f00;
+}
+.uniao4 h2{
+    float: left;
+    margin-left: 2%;
+}
+.uniao4 p{
+    float: left;
+    margin-top: 5%;
+    margin-left: -14%;
+}
+.uniao4 h3{
+    margin-top: 7%;
+    float: left;
+    margin-left: -14%;
+}
+.button1{
+    float: left;
+    margin-top: 10%;
+    height: 30px;
+    margin-left: -21%;
+    float: left;
+    width: 40%;
+}
+.button2{
+    margin-top: 13%;
+    height: 30px;
+    margin-left: -40%;
+    width: 40%;
+}
+.button1, .button2, .button3, .button4{
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    transition: .2s;
+}
+.button1:hover, .button2:hover, .button3:hover, .button4:hover{
+    background-color: #1f1f1f;
+    border: 2px solid #f00;
+    color: #f00;
+}
+#first, #second, #third, #fourth{
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    top: 1%;
+    background-color: #000;
+    z-index: -1;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+#first ul, #second ul,#third ul, #fourth ul{
+    list-style: none;
+}
+#first li, #second li, #third li, #fourth li{
+    width: 102.8%;
+    background-color: #1f1f1f;
+    margin-left: -3.8%;
+    padding-left: 1%;
+    margin-top: 2px;
+}
+#first a, #second a, #third a, #fourth a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: .2s;
+    padding-right: 100%;
+}
+#first a:hover, #second a:hover,#third a:hover, #fourth a:hover{
+    color: #f00;
+}
+#first button, #second button, #third button, #fourth button{
+    width: 30%;
+    height: 30px;
+    margin-left: 35%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    margin-top: -2%;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+#first button:hover, #second button:hover, #third button:hover, #fourth button:hover{
+    background-color: #1f1f1f;
+    color: #f00;
+    border: 2px solid #f00;
+}
+.o0{
+    opacity: 0;
+}
+.uniao5{
+    margin-left: -39%;
+    float: left;
+    margin-top: 15%;
+}
+.estrela {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+    transition: .2s;
+}
+.estrela:hover {
+    color: #ffac33;
+}
+#temporadas{
+    position: fixed;
+    width: 80%;
+    height: 400px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    z-index: -1;
+    margin-left: 10%;
+    top: 15%;
+    opacity: 0;
+    transition: .5s;
+}
+#temporadas button{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 1%;
+    height: 40px;
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    transition: .2s;
+}
+#temporadas button:hover{
+    border: 2px solid #f00;
+    color: #f00;
+    background-color: #1f1f1f;
+}
+.plus{
+    overflow-y: scroll;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.plus::-webkit-scrollbar{
+    width: 5px;
+}
+.plus::-webkit-scrollbar-thumb{
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    border: 1px solid #f00;
+}
+.efeitinho{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to top, #000, #1f1f1f);
+    bottom: 0;
+    position: fixed;
+}
+#background{
+    width: 100%;
+    height: 100%;
+    z-index: 700;
+    background-color: #0003;
+    position: fixed;
+    display: none;
+    transition: .2s;
+}
+.buttonEp{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #000;
+    transition: .2s;
+}
+.buttonEp:hover{
+    color: #f00;
+    background-color: #1f1f1f;
+    border: 2px solid #f00;
+}
+#ep{
+    width: 80%;
+    height: 80%;
+    background-color: #000;
+    position: fixed;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 10px;
+    z-index: -1;
+    border: 2px solid #fff;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    header img, footer img{
+        width: 15%;
+    }
+    .corpo{
+        height: 430px;
+    }
+    .lancamento{
+        height: 400px;
+    }
+    .lancamento img{
+        height: 270px;
+    }
+    #burguer{
+        width: 40%;
+    }
+    .matriz{
+        display: none;
+    }
+    .favs{
+        height: 250px;
+    }
+    .favs img{
+        height: 200px;
+    }
+    .uniao{
+        height: 280px;
+    }
+    #userPhoneNumber{
+        width: 56%;
+        margin-left: 20%;
+        margin-top: 6.5%;
+    }
+    #editPhoneNumberButton{
+        margin-left: 72%;
+        margin-top: 6.5%;
+    }
+    #userName{
+        margin-left: 20%;
+        width: 56%;
+    }
+    #editNameButton{
+        margin-left: 72%;
+        margin-top: 2.4%;
+    }
+    #userEmail{
+        margin-top: 10.8%;
+        width: 56%;
+        margin-left: 20%;
+    }
+    #editEmailButton{
+        margin-top: 10.8%;
+        margin-left: 72%;
+    }
+    #userGender{
+        width: 56%;
+        margin-top: 15%;
+        margin-left: 20%;
+    }
+    #editGenderButton{
+        margin-top: 15%;
+        margin-left: 72%;
+    }
+    #profileForm label img{
+        width: 6%;
+        margin-left: -7%;
+    }
+    .uniao2{
+        height: 370px;
+    }
+    .uniao4 p{
+        margin-top: 8%;
+        margin-left: -25%;
+    }
+    .uniao4 h3{
+        margin-left: -25%;
+        margin-top: 11%;
+    }
+    .button1{
+        margin-left: -55%;
+        margin-top: 31%;
+    }
+    .uniao5{
+        margin-top: 33%;
+        margin-left: -55%;
+    }
+    #send-button{
+        width: 20%;
+    }
+    .basico button{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .basico img{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .basico{
+        height: 700px;
+    }
+    .pirata {
+        height: 760px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .corpo{
+        width: 100%;
+        border-radius: 0;
+        height: 280px;
+    }
+    .lancamento{
+        width: 22%;
+        height: 250px;
+        font-size: 10px;
+    }
+    .lancamento img{
+        height: 150px;
+    }
+    header img, footer img{
+        width: 25%;
+    }
+    #burguer{
+        width: 70%;
+    }
+    .corpo1{
+        width: 100%;
+        border-radius: 0;
+    }
+    #send-button img{
+        width: 80%;
+    }
+    .favs{
+        height: 220px;
+    }
+    .favs img{
+        height: 150px;
+    }
+    .uniao{
+        height: 240px;
+    }
+    #userPhoneNumber{
+        width: 60%;
+        margin-left: 35%;
+        margin-top: 11%;
+    }
+    #editPhoneNumberButton{
+        margin-left: 89%;
+        margin-top: 11%;
+    }
+    #userName{
+        margin-left: 35%;
+        width: 60%;
+    }
+    #editNameButton{
+        margin-left: 89%;
+        margin-top: 4%;
+    }
+    #userEmail{
+        margin-top: 18%;
+        width: 60%;
+        margin-left: 35%;
+    }
+    #editEmailButton{
+        margin-top: 18%;
+        margin-left: 89%;
+    }
+    #userGender{
+        width: 60%;
+        margin-top: 25%;
+        margin-left: 35%;
+    }
+    #editGenderButton{
+        margin-top: 25%;
+        margin-left: 89%;
+    }
+    #profileForm label img{
+        width: 6%;
+        margin-left: -7%;
+    }
+    .uniao2{
+        height: 320px;
+    }
+    .matriz{
+        display: none;
+    }
+    .button1{
+        margin-top: 32%;
+        margin-left: -67%;
+    }
+    .uniao4 p{
+        margin-top: 10%;
+        margin-left: -31%;
+    }
+    .uniao4 h3{
+        margin-top: 14%;
+        margin-left: -31%;
+    }
+    .uniao5{
+        margin-top: 34%;
+        margin-left: -67%;
+    }
+    .pirata button{
+        width: 80%;
+    }
+    .basico {
+        padding-bottom: 250px;
+    }
+    .basico button{
+        width: 80%;
+    }
+    .pirata{
+        padding-bottom: 150px;
+    }
+}
