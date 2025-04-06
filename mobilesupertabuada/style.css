@@ -1,0 +1,22 @@
+body { font: 12pt Arial; } 
+h1, h2, h3 { font-family: 'Pacifico', cursive; font-weight: normal;}
+input[type=number] { font-size: 12pt; } 
+input[type=submit] {
+background-color: green;
+color: white;
+font-size: 12pt;
+padding: 5px;
+}
+body{
+    padding-left: 0%;
+    text-align: center;
+    padding-top: 200px;
+    background-color: darkgray;
+    font-weight: bold;
+}
+input{
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2</title>
+    <style>
+        body{
+            background-color: peachpuff;
+            margin: 0 auto;
+        }
+        form{
+            margin-left: 40%;
+            background-color: chocolate;
+            position: absolute;
+            margin-top: 10%;
+            width: 20%;
+            height: 30%;
+            padding-top: 5%;
+            border-radius: 10px;
+            border: 2px black solid;
+        }
+        p{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .s1{
+            text-align: center;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 10%;
+            background-color: peachpuff;
+            overflow: hidden;
+            border-radius: 10px;
+            width: 80%;
+        }
+        .s2 {
+            background-color: peachpuff;
+            text-align: center;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 10%;
+            width: 80%;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        intervalos = new Array(3); // vetor 2D c/ intervalos/turno
+        intervalos[0] = new Array("08 às 08:59", "09 às 09:59", "10 às 10:59", "11 às 11:59");
+        intervalos[1] = new Array("13 às 13:59", "14 às 14:59", "15 às 15:59", "16 às 16:59");
+        intervalos[2] = new Array("18 às 18:59", "19 às 19:59", "20 às 20:59", "21 às 21:59");
+        function setIntervalos(f) {
+         idx = f.turno.options.selectedIndex;
+         for (i = 0; i < f.horario.length; i++) {
+         f.horario.options[i].text = intervalos[idx][i];
+         }
+        }
+   
+        function mais(f) { // f é o formulário onde o Select está contido
+        selObj = f.horario;
+        novaOp = new Option(); // (1)
+        novaOp.text = "Intervalo 0" + (selObj.length + 1); // (2)
+        selObj.options[selObj.length] = novaOp; // (3)
+        }
+        function menos(f) {
+        selObj = f.horario;
+        if (selObj.length > 0) {
+        len = selObj.length - 1;
+        selObj.length = len; // length = length - 1
+            }
+        }
+   
+        </script>
+</head>
+<body>
+
+    <form>
+        <p>Escolha um turno:</p>
+        <select class="s2" name=turno onchange="setIntervalos(this.form)">
+         <option>Manhã</option>
+         <option>Tarde</option>
+         <option>Noite</option>
+        </select>
+        <p>Escolha um ou mais intervalos:</p>
+        <select class="s1" name=horario size=4 multiple>
+         <option> Intervalo 01 </option> <!-- Estes valores irão mudar -->
+         <option> Intervalo 02 </option>
+         <option> Intervalo 03 </option>
+         <option> Intervalo 04 </option>
+        </select>
+    </form>
+   
+</body>
+</html>
