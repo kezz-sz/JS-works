@@ -1,0 +1,92 @@
+label[for=preto]::after {
+    left: 10px;
+    background-color: #e7868e;
+    transition: .2s;
+}
+label[for=rosa]::after {
+    left: 70px;
+    background-color: #e7868e;
+    transition: .2s;
+}
+label[for=roxo]::after {
+    left: 130px;
+    background-color: #e7868e;
+    transition: .2s;
+}
+.modelo img {
+    width: 15%;
+    background-color: #e7868e;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    border: 2px solid #994151;
+    transition: .5s;
+}
+.modelo {
+    position: relative;
+    padding-top: 90px;
+    border:#e05e69 solid;
+    border-radius: 10px;
+}
+.modelo img:hover{
+    scale: 1.05;
+    transform: rotate(3deg);
+}
+.modelo label::after {
+    position: absolute;
+    top: 30px;
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.modelo input:checked + label::after{
+    border: 5px solid #0001;
+}
+
+.modelo input[type = radio] {
+    display: none;
+}
+.modelo input:not(:checked) + label img {
+    display: none;
+}
+.modelo input:not(:checked) + label .texto {
+    display: none;
+}
+.modelo img {
+    float: left;
+}
+.texto {
+    padding: 0% 2%;
+    float: left;
+}
+.texto h2 {
+    color: #994151;
+}
+.texto h3 {
+    color: #994151;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.produtos {
+    border-radius: 10px;
+    background-color: #ffbcbf;
+}
+.produtos {
+    background-color: #ffbcbf ;
+    position: relative;
+    border-radius: 10px;
+}
+button {
+    background-color: #e05e69;
+    border: 1px solid #fff;
+    padding: 1%;
+    border-radius: 10px;
+    color: #Fff;
+    font-size: 20px;
+    transition: .2s;
+}
+button:hover{
+    scale: 1.05;
+}

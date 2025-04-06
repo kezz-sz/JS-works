@@ -1,0 +1,536 @@
+*{
+    transition: .5s;
+}
+p {
+    font-size: 20px;
+}
+hr{
+    border-color: black;
+}
+pre{
+    color: #aa6581;
+    font-size: 15px;
+    background-color: #ffc5c1;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+    padding: 15px;
+}
+h1{
+    color: #ffff;
+}  
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #e05e69;
+    /*background-image: url(../img/yuri-ddlc-ddlc.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+}
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-thumb{
+    border: 2px solid #ffbcbf;
+    border-radius: 10px;
+    background-color: palevioletred;
+    width: 2px;
+}
+body::-webkit-scrollbar-track{
+    border-radius: 10px;
+    border-radius: 20px;
+    background-color: #e05e69;
+}
+header{
+    position: relative;
+    background-color: #ffbcbf;
+    border-radius: 0 0 10px 10px;
+}
+header img{
+    padding-left: 2%;
+    margin: auto;
+    /*redisplay: block;*/
+}
+header img:hover{
+    scale: 1.1;
+}
+#corpo{
+    background-color: #ffbcbf;
+    border-radius: 10px;
+    padding: 15px;
+    width: 91.5%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.burdinha{
+    background-color: #ffbcbf;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+    padding: 15px;
+}
+mark{
+    background-color: #e7868e;
+}
+/*a:visited{
+    color: purple;
+}
+a:link {
+    color: purple;
+}
+a:active {
+    color:turquoise;
+}
+a:hover {
+    color:turquoise;
+    transition: 0.5s;
+}*/
+.sfigure{
+    padding: 15px;
+    margin: 30px;
+    background-color: #efafb4;
+    border: 10px solid #e7868e;
+    text-align: center;
+}
+.sfigcaption{
+    margin-top: 10;
+    font-style: italic;
+}
+#matriz{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border-radius: 10px;
+}
+#matriz img{
+    width: 20%;
+    border-radius: 10px;
+}
+#matriz img:hover{
+    scale: 1.1;
+}
+#coopera{
+    float: right;
+    margin: 0 0 10px 40px;
+    width: 500px;
+    border-radius: 10px;
+}
+#coopera:hover{
+        scale: 1.1;
+    }
+.esquerda{
+    text-align: left;
+}
+#titulo{
+    text-align: center;
+    color: black;
+}
+.caixinha{
+    margin-top: 20px;
+    background-color: #efafb4;
+    border-radius: 10px;
+    padding: 15px;
+}
+.menu_op{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+}
+.menu_op ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(215, 194, 248, 0);
+    font-weight: bold;
+}
+
+.menu hr {
+    color: #fff;
+ background-color: #fff;
+}
+.menu_op{
+    display: flex;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+.menu_op a{
+    margin-right: 10px;
+    color: #ed5163;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border: 1px solid #192a5100;
+    transition: 0.5s;
+
+}
+.menu_op a:hover{
+    background-color: #ec8e94;
+    color: #ffffff;
+    border:1px solid #f36c7a;
+}
+.buscar{
+    position: relative;
+    float: right;
+    background-color: #e7868e;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 250px;
+    color: rgb(208, 166, 224);
+    border-radius: 15px;
+}
+.buscar button{
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    background-color: #0000;
+}
+.buscar button:hover{
+    scale: 1.1;
+}
+.buscar input[type=search]{
+    width: 220px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+.buscar h2{
+    text-align: center;
+    color: #fff;
+}
+.social{
+    position: relative;
+    float: right;
+    top: 12px;
+    list-style-type: none;
+}
+.social li{
+    float: left;
+    margin-left: 25px;
+}
+.social a{
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+}
+.social a:hover{
+    scale: 1.1;
+}
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+.social a[href*="instagram.com"] {
+    background-image: url(../img/instagram.png);
+}
+.corpo{
+    position: relative;
+    width: 94%;
+    background-color: #ffbcbf;
+    height: 1200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+.menu{
+    position: relative;
+    float: left;
+    width: 25%;
+    background-color: #ffbcbf;
+    height: 350px;
+    border-top-left-radius: 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: #994151;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.menu a:hover{
+    color: #ed5163;
+}
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 12%;
+}
+.menu h2{
+    text-align: center;
+    color: #fff;
+}
+.menu hr{
+    width: 90%;
+}
+
+.destaque{
+    position: relative;
+    width: 75%;
+    height: 350px;
+    float: left;
+    background-color: #967AA1;
+    border-top-right-radius: 10px;
+}
+.destaque img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+}
+.paineis{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #ffbcbf;
+}
+.mais_jogados{
+    float: left;
+    position: relative;
+    width: 50%;
+}
+footer{
+    margin-top: 1%;
+    background-color: #ffbcbf;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+}
+footer img{
+    width: 8%;
+}
+footer img:hover{
+    scale: .9;
+}
+footer p{
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+}
+.novidades, .mais_jogados{
+    float: left;
+    position: relative;
+    width: calc(50% - 2px);
+    height: 780px;
+    background-color: #ffbcbf;
+    border-bottom: 2px solid #E9E8F2;
+    border-top: 2px solid #E9E8F2;
+}
+.novidades{
+    border-right: 1px solid #E9E8F2;
+    border-radius: 0 0 10px;
+}
+.mais_jogados{
+    border-left: 1px solid #E9E8F2;
+    border-radius: 0 0 0 10px;
+}
+.novidades ol, .mais_jogados ol{
+    list-style: none;
+}
+.novidades figure, .mais_jogados figure{
+    float: left;
+    width: 30%;
+    background-color: #f36c7a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #994151;
+    transition: .7s;
+}
+.novidades figure:hover{
+    background-color: #e05e69;
+    scale: 1.1;
+    transform: rotate(8deg);
+    border: 2px solid #E9E8F2;
+}
+.mais_jogados figure:hover{
+    background-color: #e05e69;
+    scale: 1.1;
+    transform: rotate(-8deg);
+    border: 2px solid #ffffff;
+}
+.novidades figcaption, .mais_jogados figcaption{
+    text-align: center;
+}
+.novidades img, .mais_jogados img{
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+    background-color: #fff;
+}
+.novidades a, .mais_jogados a{
+    text-decoration: none;
+    color: #fff;
+}
+.novidades h2, .mais_jogados h2{
+    text-align: center;
+    color: #fff;
+}
+#DarkButton, #LightButton{
+    font-size: 30px;
+    background-color: #0000;
+    border: none;
+    position: fixed;
+    z-index: 9999;
+    right: 30px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    opacity: .6;
+}
+#DarkButton:hover, #LightButton:hover{
+    scale: 1.1;
+    transform: rotate(-10deg);
+}
+#LightButton{
+    display: none;
+}
+button{
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    color: #ffbcbf;
+}
+.buy{
+    background-color: #ffbcbf;
+    border-radius: 10px;
+}
+.buy fieldset{
+    border: none;
+}
+.buy label{
+    font-size: 20px;
+}
+.buy input[type = text], .buy input[type = email], .buy input[type = number], .buy select{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #e05e69;
+    background-color: #ffbcbf;
+    margin-top: .5%;
+    display: flex;
+}
+.buy select::-webkit-scrollbar{
+    width: 5px;
+}
+.buy select::-webkit-scrollbar-thumb{
+    width: 3px;
+    border: 1px solid #ffbcbf;
+    background-color: #e05e69;
+    border-radius: 10px;
+}
+.buy input[type = text]:hover, .buy input[type = email]:hover, .buy input[type = number]:hover, select:hover, .buy input[type = submit]:hover{
+    background-color: #ffc5c1;
+}
+.buy input[type = submit]{
+    width: 20%;
+    height: 30px;
+    background-color: #ffbcbf;
+    border: 2px solid #e05e69;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 40%;
+    cursor: pointer;
+}
+.buy input[type = radio]{
+    display: none;
+}
+#l1{
+    background-color: #e05e69;
+}
+.bolinha{
+    height: 15px;
+    width: 15px;
+    background-color: #ffbcbf;
+    border: 2px solid #e05e69;
+    border-radius: 10px;
+    margin-right: 1%;
+    display: flex;
+    text-indent: 20px;
+    margin-bottom: 1%;
+}
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .novidades{
+        width: 100%;
+    }
+    .mais_jogados{
+        width: 100%;
+    }
+    .corpo{
+        height: 1200px;
+    }
+    .menu{
+        height: 350px;
+    }
+    .destaque{
+        height: 350px;
+    }
+    header{
+        height: 200px;
+    }
+    header img{
+        width: 23%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .menu_op{
+        width: 100%;
+        display: flex;
+        float: left;
+        margin-right: 0;
+    }
+    .menu_op a{
+        margin-left: 12px;
+    }
+    .destaque{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    header{
+        height: 200px;
+    }
+    .buscar{
+        display: none;
+    }
+    header img{
+        justify-content: center;
+        display: flex;
+        width: 35%;
+        align-items: center;
+    }
+    .novidades, .mais_jogados{
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid #ffffff;
+    }
+    .corpo{
+        height: 1950px;
+    }
+    footer img{
+        width: 10%;
+    }    
+    #DarkButton, #LightButton{
+        width: 100px;
+        right: 0;
+    }
+}
