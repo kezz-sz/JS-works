@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício 12: cria 2 funções em JS que permitem somar ou multiplicar
+        valores informados em 3 caixas de texto.</title>
+        <script>
+        function soma()
+        {
+        x=eval(document.prova.c1.value)+eval(document.prova.c2.value)+eval(document.
+        prova.c3.value);
+        document.prova.c4.value=x;
+        }
+        function multiplica()
+        {
+        y=eval(document.prova.c1.value)*eval(document.prova.c2.value)*eval(document.
+        prova.c3.value);
+        document.prova.c4.value=y;
+        }
+        </script>
+</head>
+<body>
+    <style>
+           
+        *{
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body{
+        background-color: #5F7C8A;
+    }
+    form{
+        background-color: white;
+        max-width: 500px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    form p{
+        text-align: left;
+        color: #5F7C8A;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: small;
+    }
+    form input[type=text],
+    form input[type=password]{
+      width: 100%;
+      height: 45px;
+      border: 1px solid#ccc;
+      padding-left: 10px;
+      margin: 10px 0;
+     
+    }
+ 
+    form input[type=submit]:hover{
+        background-color: #4A5F6A;
+    }
+    form input[type=text]:focus{
+        outline: 0;
+    }
+    form input[type=password]:focus{
+        outline: 0;
+    }
+        </style>
+        <form name="prova">
+            Entre com os valores nos campos e dê um clique nos botões. <br><br>
+            Valor1: <input type="text" name="c1" value="" size=5 maxlength=5><br>
+            Valor2: <input type="text" name="c2" value="" size=5 maxlength=5><br>
+            Valor3: <input type="text" name="c3" value="" size=5 maxlength=5><br>
+            <br>
+            <input type="button" value="Somar" onclick="soma()">
+            <input type="button" value="Multiplicar" onclick="multiplica()">
+            <br><br>
+            Resposta: <input type="text" name="c4" value="" size=10 maxlength=0>
+        </form>
+        <!--
+        O eval () é uma função que avalia ou executa um argumento. Se o argumento for uma
+        expressão, eval () avalia a expressão. Se o argumento for uma ou mais declarações
+        JavaScript, eval () executa as instruções.
+        -->
+   
+</body>
+</html>
